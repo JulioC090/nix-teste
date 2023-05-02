@@ -9,6 +9,7 @@ pkgs.mkShell {
   name = "nix-teste";
   buildInputs = [
     pkgs.nodejs-16_x
+    pkgs.yarn
     pkgs.curl
   ];
 }
