@@ -12,4 +12,9 @@ pkgs.mkShell {
     pkgs.yarn
     pkgs.curl
   ];
+
+  shellHook = ''
+    echo Executando yarn
+    yarn
+  '';
 }
