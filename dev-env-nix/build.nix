@@ -17,10 +17,10 @@ vscodeWithExtension = (pkgs.vscode-with-extensions.override {
 
 in
 
-pkgs.mkShell {
-  name = "my-c-development-environment-with-vscode";
+pkgs.buildEnv {
+  name = "my-c-development-environment";
 
-  buildInputs = [
+  paths = [
     pkgs.git
     pkgs.gcc
     pkgs.gdb
